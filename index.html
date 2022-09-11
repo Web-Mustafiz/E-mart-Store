@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Mart Your Digital Super Market</title>
+
+    <!-- Bootstrap CDN CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome CDN  -->
+    <script
+      src="https://kit.fontawesome.com/2161eb502c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom CSS  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-menu">
+      <div class="container-fluid">
+        <div class="row w-100 align-items-center g-0 g-lg-3">
+          <div class="col-xxl-10 col-lg-8">
+            <div class="d-flex align-items-center">
+              <button
+                class="btn btn-primary d-none d-lg-block"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#side-menu"
+                aria-controls="offcanvasExample"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <a href="index.html" class="navbar-brand d-none d-lg-block ms-4">
+                E-Mart
+              </a>
+
+              <input
+                class="form-control position-relative d-none d-lg-block"
+                type="text"
+                value="Search for Products"
+                aria-label="readonly input example"
+                readonly
+              />
+            </div>
+
+            <div
+              class="d-flex justify-content-between align-items-center d-lg-none"
+            >
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <a href="index.html" class="navbar-brand d-block ms-4">
+                E-Mart
+              </a>
+              <div class="d-flex align-items-center justify-content-end">
+                <a class="nav-link me-3 position-relative" href="#">
+                  <i class="fa-solid fa-user"></i>
+                </a>
+                <a class="nav-link me-3 position-relative" href="#">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning"
+                    >5</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-2 col-lg-4">
+            <div
+              class="d-lg-flex align-items-center justify-content-end d-none"
+            >
+              <a class="nav-link me-3 position-relative" href="#">
+                <i class="fa-regular fa-heart"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning"
+                  >7</span
+                >
+              </a>
+
+              <a class="nav-link me-3 position-relative" href="#">
+                <i class="fa-solid fa-location-dot"></i>
+              </a>
+
+              <a class="nav-link me-3 position-relative" href="#">
+                <i class="fa-solid fa-user"></i>
+              </a>
+
+              <a class="nav-link me-3 position-relative" href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning"
+                  >5</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- row closed  -->
+
+        <!-- offcanvase  -->
+        <div
+          class="offcanvas offcanvas-start p-4"
+          tabindex="-1"
+          id="side-menu"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <a href="index.html" class="navbar-brand d-none d-lg-block ms-4">
+                    E-Mart
+                  </a>
+                <button type="button" class="btn-close me-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- all departments  -->
+            <div class="d-block mb-2 pt-2">
+                <a href="#departments-list" class="btn btn-success w-100 d-flex justify-content-center align-items-center"
+                data-bs-toggle="collapse"
+                >
+                    <i class="fa-solid fa-border-all me-3"></i>All Departments
+                </a>
+            </div>
+            <div class="collapse mt-3" id="departments-list">
+                <div class="card card-body">
+                    <ul class="mb-0 list-unstyled">
+                        <li>
+                            <a href="" class="dropdown-item text-muted py-2">
+                                Dairy, Bread &amp; Eggs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item text-muted py-2">
+                                Snacks &amp; Munchies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item text-muted py-2">
+                                Fruits &amp; Vegetables
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item text-muted py-2">
+                                Cold Drinks &amp; Juices
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item text-muted py-2">
+                                Breakfast &amp; Instant Food
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item text-muted py-2">
+                                Bakery &amp; Biscuits
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item text-muted py-2">
+                                Chicken, Meat &amp; Fish
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end all departments  -->
+            <!-- location start  -->
+            <div class="m-2">
+                <button 
+                type="button"
+                data-bs-toggle="modal"
+                class="btn btn-outline-secondary  w-100"
+                data-bs-target=""
+                >
+                    <i class="fa-solid fa-location-dot me-3"></i>Pick Location
+                </button>
+            </div>
+            <!-- main menu starts -->
+            <ul class="navbar-nav navbar-nav-offcanvac d-flex w-100 m-2 justify-content-between">
+                <li class="nav-item dropdown">
+                    <a class="nav-link d-flex justify-content-between border-bottom"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >
+                        Home<i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link d-flex justify-content-between border-bottom"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                        Shop<i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link d-flex justify-content-between border-bottom"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                        Store<i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link d-flex justify-content-between border-bottom"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                        Mega Menu<i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link d-flex justify-content-between border-bottom"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                        Pages<i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link d-flex justify-content-between border-bottom"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                        Accounts<i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link d-flex justify-content-between border-bottom"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                        Blogs<i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+      </div>
+    </nav>
+
+    <!-- Bootstrap Js CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
